@@ -8,6 +8,14 @@
 #ifndef VRS_CV5_H_
 #define VRS_CV5_H_
 
+#include "stm32l1xx.h"
+
+
+void adc_init(void);
+void gpio_init(void);
+
+
+void ADC1_IRQHandler(void);
 
 
 #endif /* VRS_CV5_H_ */
