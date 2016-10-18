@@ -13,9 +13,13 @@
 
 void adc_init(void);
 void gpio_init(void);
+void usart_init(void);
+
+void SendChar(uint8_t ch);
 
 
 void ADC1_IRQHandler(void);
+void USART1_IRQHandler(void);
 
 
 #endif /* VRS_CV5_H_ */
