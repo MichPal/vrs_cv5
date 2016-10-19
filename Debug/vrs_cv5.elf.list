@@ -2615,7 +2615,7 @@ int main(void)
 	while (1)
 	{
 		{
-
+//test
 			if (pom==0)
  8000e76:	4b0c      	ldr	r3, [pc, #48]	; (8000ea8 <main+0x44>)
  8000e78:	781b      	ldrb	r3, [r3, #0]

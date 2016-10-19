@@ -16,7 +16,7 @@ int main(void)
 	while (1)
 	{
 		{
-
+//test
 			if (pom==0)
 			{
 				sprintf(poleChar,"%d\r\n",ADCvalue);
