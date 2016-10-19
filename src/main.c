@@ -1,10 +1,12 @@
 #include <stddef.h>
 #include "stm32l1xx.h"
+#include <stdio.h>
 
 #include "vrs_cv5.h"
 
-//extern uint16_t ADCvalue;
+extern uint16_t ADCvalue;
 extern uint8_t pom;
+char poleChar[10];
 
 int main(void)
 {
@@ -14,9 +16,17 @@ int main(void)
 	while (1)
 	{
 		{
-			pom=0;
-			SendChar('b');
-			for(uint32_t i=1;i<500000;i++);
+
+			if (pom==0)
+			{
+				sprintf(poleChar,"%d\r\n",ADCvalue);
+				SendString(poleChar);
+			}else
+			{
+
+			}
+
+			for (uint32_t i=1;i<500000;i++);
 		}
 	}
   return 0;
