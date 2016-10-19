@@ -13,8 +13,6 @@ int main(void)
 	usart_init();
 	while (1)
 	{
-		SendChar('b');
-	/*	if(pom == 'a')
 		{
 			pom=0;
 			SendChar('b');
