@@ -11,9 +11,7 @@ uint8_t pom;
 
 void adc_init(void)
 {
-
 	ADC_InitTypeDef ADC_InitStructure;
-
 
 	/* Enable the HSI oscillator */
 	RCC_HSICmd(ENABLE);
@@ -36,9 +34,9 @@ void adc_init(void)
 	ADC_Init(ADC1, &ADC_InitStructure);
 
 	/* ADCx regular channel8 configuration */
-	ADC_RegularChannelConfig(ADC1, ADC_Channel_0, 1, ADC_SampleTime_16Cycles);
+	ADC_RegularChannelConfig(ADC1, ADC_Channel_0, 1, ADC_SampleTime_384Cycles);
 	ADC_ITConfig(ADC1,ADC_IT_EOC,ENABLE);
-	ADC_ITConfig(ADC1,ADC_IT_OVR,ENABLE);
+	//ADC_ITConfig(ADC1,ADC_IT_OVR,ENABLE);
 
 	NVIC_PriorityGroupConfig(NVIC_PriorityGroup_4);
 	NVIC_InitTypeDef NVIC_InitStructure;
@@ -54,7 +52,7 @@ void adc_init(void)
 	/* Wait until the ADC1 is ready */
 	while(ADC_GetFlagStatus(ADC1, ADC_FLAG_ADONS) == RESET);
 	ADC_SoftwareStartConv(ADC1);
-///	while(!ADC_GetFlagStatus(ADC1, ADC_FLAG_EOC)) asm ("nop");
+	//while(!ADC_GetFlagStatus(ADC1, ADC_FLAG_EOC)) asm ("nop");
 
 }
 
@@ -64,7 +62,7 @@ void gpio_init(void)
 
 	/* Enable GPIO clock */
 	RCC_AHBPeriphClockCmd(RCC_AHBPeriph_GPIOA, ENABLE);
-	RCC_APB2PeriphClockCmd(RCC_APB2Periph_USART1, ENABLE); // USART
+	RCC_APB1PeriphClockCmd(RCC_APB1Periph_USART2, ENABLE); // USART
 
 
 	/* Configure ADCx Channel 0 as analog input */
@@ -81,8 +79,8 @@ void gpio_init(void)
 	GPIO_InitStructure.GPIO_Speed = GPIO_Speed_40MHz;
 	GPIO_Init(GPIOA, &GPIO_InitStructure);
 
-	GPIO_PinAFConfig(GPIOA,GPIO_PinSource2,GPIO_AF_USART1);
-	GPIO_PinAFConfig(GPIOA,GPIO_PinSource3,GPIO_AF_USART1);
+	GPIO_PinAFConfig(GPIOA,GPIO_PinSource2,GPIO_AF_USART2);
+	GPIO_PinAFConfig(GPIOA,GPIO_PinSource3,GPIO_AF_USART2);
 }
 
 void usart_init()
@@ -90,50 +88,49 @@ void usart_init()
 	USART_InitTypeDef USART_InitStructure;
 
 //	USART_StructInit(&USART_InitStructure);
-	USART_InitStructure.USART_BaudRate = 9600;
+	USART_InitStructure.USART_BaudRate = 9800;
 	USART_InitStructure.USART_WordLength = USART_WordLength_8b;
 	USART_InitStructure.USART_StopBits = USART_StopBits_1;
 	USART_InitStructure.USART_Parity = USART_Parity_No;
 	USART_InitStructure.USART_HardwareFlowControl = USART_HardwareFlowControl_None;
 	USART_InitStructure.USART_Mode = USART_Mode_Rx | USART_Mode_Tx;
-	USART_Init(USART1, &USART_InitStructure);
+	USART_Init(USART2, &USART_InitStructure);
 
-	USART_ITConfig(USART1,USART_IT_RXNE,ENABLE);	//USART na prerusenie
+	//USART_ITConfig(USART2,USART_IT_RXNE,ENABLE);	//USART na prerusenie
 
-	//NVIC_PriorityGroupConfig(NVIC_PriorityGroup_4);
 	NVIC_InitTypeDef NVIC_InitStructure;
-	NVIC_InitStructure.NVIC_IRQChannel = USART1_IRQn; //zoznam prerušení nájdete v
+	NVIC_InitStructure.NVIC_IRQChannel = USART2_IRQn; //zoznam prerušení nájdete v
 	NVIC_InitStructure.NVIC_IRQChannelPreemptionPriority = 1;
 	NVIC_InitStructure.NVIC_IRQChannelSubPriority = 0;
 	NVIC_InitStructure.NVIC_IRQChannelCmd = ENABLE;
 	NVIC_Init(&NVIC_InitStructure);
 
-	USART_Cmd(USART1,ENABLE);	// povolenie USART
+	USART_Cmd(USART2,ENABLE);	// povolenie USART
 
 }
 
 void SendChar(uint8_t ch)
 {
-	USART_SendData(USART1,(uint8_t) ch);
-	while(!USART_GetFlagStatus(USART1,USART_FLAG_TC));
+	USART_SendData(USART2,(char) ch);
+	while(!USART_GetFlagStatus(USART2,USART_FLAG_TC));
 }
 
 void ADC1_IRQHandler(void)
 {
-	if(ADC_GetFlagStatus(ADC1,ADC_SR_EOC))
+	if(ADC_GetFlagStatus(ADC1,ADC_FLAG_EOC))
 	{
-		ADCvalue=ADC1->DR;
+		ADCvalue=ADC_GetConversionValue(ADC1);
 
 	}
 	//if(ADC_GetFlagStatus(ADC1,ADC_SR_OVR))	ADC_ClearFlag(ADC1,ADC_FLAG_OVR);
 }
 
-void USART1_IRQHandler()
+void USART2_IRQHandler()
 {
-	if(USART_GetFlagStatus(USART1,USART_IT_RXNE))
+	if(USART_GetFlagStatus(USART2,USART_FLAG_RXNE))
 	{
-		USART_ClearITPendingBit(USART1,USART_IT_RXNE);
-		pom=USART_ReceiveData(USART1);
+		//USART_ClearITPendingBit(USART2,USART_IT_RXNE);
+		pom=USART_ReceiveData(USART2);
 	}
 
 }

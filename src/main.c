@@ -4,19 +4,21 @@
 #include "vrs_cv5.h"
 
 //extern uint16_t ADCvalue;
-//extern uint8_t pom;
+extern uint8_t pom;
 
 int main(void)
 {
 	gpio_init();
 	adc_init();
+	usart_init();
 	while (1)
 	{
 		{
 			pom=0;
 			SendChar('b');
+			for(uint32_t i=1;i<500000;i++);
 		}
-	*/}
+	}
   return 0;
 }
 
