@@ -2,12 +2,12 @@
  * vrs_cv5.c
  *
  *  Created on: 18. 10. 2016
- *      Author: TOMAS
+ *      Author: Michal
  */
 #include "vrs_cv5.h"
 
 uint16_t ADCvalue=0;
-uint8_t pom=0;
+uint8_t pom;
 
 void adc_init(void)
 {
@@ -96,7 +96,7 @@ void usart_init()
 	USART_InitStructure.USART_Mode = USART_Mode_Rx | USART_Mode_Tx;
 	USART_Init(USART2, &USART_InitStructure);
 
-	USART_ITConfig(USART2,USART_IT_RXNE,ENABLE);	//USART na prerusenie
+	//USART_ITConfig(USART2,USART_IT_RXNE,ENABLE);	//USART na prerusenie
 
 	NVIC_InitTypeDef NVIC_InitStructure;
 	NVIC_InitStructure.NVIC_IRQChannel = USART2_IRQn; //zoznam prerušení nájdete v
@@ -109,20 +109,10 @@ void usart_init()
 
 }
 
-void SendChar(char ch)
+void SendChar(uint8_t ch)
 {
 	USART_SendData(USART2,(char) ch);
 	while(!USART_GetFlagStatus(USART2,USART_FLAG_TC));
-}
-
-void SendString(char* stringa)
-{
-	uint8_t i=0;
-	while(stringa[i]!=0)
-	{
-		SendChar(stringa[i]);
-		i++;
-	}
 }
 
 void ADC1_IRQHandler(void)
@@ -130,6 +120,7 @@ void ADC1_IRQHandler(void)
 	if(ADC_GetFlagStatus(ADC1,ADC_FLAG_EOC))
 	{
 		ADCvalue=ADC_GetConversionValue(ADC1);
+
 	}
 	//if(ADC_GetFlagStatus(ADC1,ADC_SR_OVR))	ADC_ClearFlag(ADC1,ADC_FLAG_OVR);
 }
@@ -139,13 +130,7 @@ void USART2_IRQHandler()
 	if(USART_GetFlagStatus(USART2,USART_FLAG_RXNE))
 	{
 		//USART_ClearITPendingBit(USART2,USART_IT_RXNE);
-
-		if (USART_ReceiveData(USART2)=='m')
-		{
-			if (pom==0) pom = 1;
-			else pom = 0;
-		}
-
+		pom=USART_ReceiveData(USART2);
 	}
 
 }
