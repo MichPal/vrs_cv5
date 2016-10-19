@@ -137,7 +137,7 @@ Discarded input sections
                 0x00000000       0xa8 Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_aes.o
  .debug_ranges  0x00000000       0x98 Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_aes.o
  .debug_line    0x00000000      0x364 Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_aes.o
- .debug_str     0x00000000      0x499 Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_aes.o
+ .debug_str     0x00000000      0x49a Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_aes.o
  .comment       0x00000000       0x7f Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_aes.o
  .debug_frame   0x00000000      0x2cc Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_aes.o
  .ARM.attributes
@@ -163,7 +163,7 @@ Discarded input sections
                 0x00000000       0x48 Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_aes_util.o
  .debug_ranges  0x00000000       0x38 Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_aes_util.o
  .debug_line    0x00000000      0x674 Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_aes_util.o
- .debug_str     0x00000000      0x3c7 Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_aes_util.o
+ .debug_str     0x00000000      0x3c8 Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_aes_util.o
  .comment       0x00000000       0x7f Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_aes_util.o
  .debug_frame   0x00000000      0x100 Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_aes_util.o
  .ARM.attributes
@@ -191,7 +191,7 @@ Discarded input sections
                 0x00000000       0x50 Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_comp.o
  .debug_ranges  0x00000000       0x40 Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_comp.o
  .debug_line    0x00000000      0x27d Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_comp.o
- .debug_str     0x00000000      0x300 Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_comp.o
+ .debug_str     0x00000000      0x301 Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_comp.o
  .comment       0x00000000       0x7f Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_comp.o
  .debug_frame   0x00000000      0x120 Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_comp.o
  .ARM.attributes
@@ -217,7 +217,7 @@ Discarded input sections
                 0x00000000       0x48 Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_crc.o
  .debug_ranges  0x00000000       0x38 Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_crc.o
  .debug_line    0x00000000      0x223 Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_crc.o
- .debug_str     0x00000000      0x29b Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_crc.o
+ .debug_str     0x00000000      0x29c Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_crc.o
  .comment       0x00000000       0x7f Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_crc.o
  .debug_frame   0x00000000       0xe8 Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_crc.o
  .ARM.attributes
@@ -264,7 +264,7 @@ Discarded input sections
                 0x00000000       0xa0 Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_dac.o
  .debug_ranges  0x00000000       0x90 Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_dac.o
  .debug_line    0x00000000      0x356 Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_dac.o
- .debug_str     0x00000000      0x4a3 Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_dac.o
+ .debug_str     0x00000000      0x4a4 Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_dac.o
  .comment       0x00000000       0x7f Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_dac.o
  .debug_frame   0x00000000      0x2ac Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_dac.o
  .ARM.attributes
@@ -288,7 +288,7 @@ Discarded input sections
                 0x00000000       0x40 Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_dbgmcu.o
  .debug_ranges  0x00000000       0x30 Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_dbgmcu.o
  .debug_line    0x00000000      0x209 Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_dbgmcu.o
- .debug_str     0x00000000      0x290 Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_dbgmcu.o
+ .debug_str     0x00000000      0x291 Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_dbgmcu.o
  .comment       0x00000000       0x7f Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_dbgmcu.o
  .debug_frame   0x00000000       0xc8 Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_dbgmcu.o
  .ARM.attributes
@@ -323,7 +323,7 @@ Discarded input sections
                 0x00000000       0x70 Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_dma.o
  .debug_ranges  0x00000000       0x60 Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_dma.o
  .debug_line    0x00000000      0x337 Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_dma.o
- .debug_str     0x00000000      0x417 Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_dma.o
+ .debug_str     0x00000000      0x418 Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_dma.o
  .comment       0x00000000       0x7f Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_dma.o
  .debug_frame   0x00000000      0x1c8 Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_dma.o
  .ARM.attributes
@@ -353,7 +353,7 @@ Discarded input sections
                 0x00000000       0x58 Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_exti.o
  .debug_ranges  0x00000000       0x48 Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_exti.o
  .debug_line    0x00000000      0x2a5 Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_exti.o
- .debug_str     0x00000000      0x3a9 Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_exti.o
+ .debug_str     0x00000000      0x3aa Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_exti.o
  .comment       0x00000000       0x7f Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_exti.o
  .debug_frame   0x00000000      0x148 Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_exti.o
  .ARM.attributes
@@ -449,7 +449,7 @@ Discarded input sections
                 0x00000000      0x160 Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_flash.o
  .debug_ranges  0x00000000      0x150 Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_flash.o
  .debug_line    0x00000000      0x5ab Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_flash.o
- .debug_str     0x00000000      0x752 Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_flash.o
+ .debug_str     0x00000000      0x753 Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_flash.o
  .comment       0x00000000       0x7f Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_flash.o
  .debug_frame   0x00000000      0x5c4 Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_flash.o
  .ARM.attributes
@@ -463,7 +463,7 @@ Discarded input sections
                 0x00000000       0x58 Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_flash_ramfunc.o
  .debug_ranges  0x00000000       0x48 Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_flash_ramfunc.o
  .debug_line    0x00000000      0x28e Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_flash_ramfunc.o
- .debug_str     0x00000000      0x411 Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_flash_ramfunc.o
+ .debug_str     0x00000000      0x412 Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_flash_ramfunc.o
  .comment       0x00000000       0x7f Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_flash_ramfunc.o
  .debug_frame   0x00000000      0x140 Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_flash_ramfunc.o
  .ARM.attributes
@@ -485,7 +485,7 @@ Discarded input sections
                 0x00000000       0x38 Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_fsmc.o
  .debug_ranges  0x00000000       0x28 Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_fsmc.o
  .debug_line    0x00000000      0x293 Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_fsmc.o
- .debug_str     0x00000000      0x474 Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_fsmc.o
+ .debug_str     0x00000000      0x475 Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_fsmc.o
  .comment       0x00000000       0x7f Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_fsmc.o
  .debug_frame   0x00000000       0xb0 Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_fsmc.o
  .ARM.attributes
@@ -591,7 +591,7 @@ Discarded input sections
                 0x00000000      0x120 Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_i2c.o
  .debug_ranges  0x00000000      0x110 Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_i2c.o
  .debug_line    0x00000000      0x4e4 Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_i2c.o
- .debug_str     0x00000000      0x6b5 Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_i2c.o
+ .debug_str     0x00000000      0x6b6 Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_i2c.o
  .comment       0x00000000       0x7f Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_i2c.o
  .debug_frame   0x00000000      0x530 Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_i2c.o
  .ARM.attributes
@@ -617,7 +617,7 @@ Discarded input sections
                 0x00000000       0x48 Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_iwdg.o
  .debug_ranges  0x00000000       0x38 Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_iwdg.o
  .debug_line    0x00000000      0x215 Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_iwdg.o
- .debug_str     0x00000000      0x2bc Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_iwdg.o
+ .debug_str     0x00000000      0x2bd Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_iwdg.o
  .comment       0x00000000       0x7f Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_iwdg.o
  .debug_frame   0x00000000       0xf0 Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_iwdg.o
  .ARM.attributes
@@ -666,7 +666,7 @@ Discarded input sections
                 0x00000000       0xa8 Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_lcd.o
  .debug_ranges  0x00000000       0x98 Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_lcd.o
  .debug_line    0x00000000      0x352 Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_lcd.o
- .debug_str     0x00000000      0x446 Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_lcd.o
+ .debug_str     0x00000000      0x447 Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_lcd.o
  .comment       0x00000000       0x7f Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_lcd.o
  .debug_frame   0x00000000      0x2c0 Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_lcd.o
  .ARM.attributes
@@ -698,7 +698,7 @@ Discarded input sections
                 0x00000000       0x60 Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_opamp.o
  .debug_ranges  0x00000000       0x50 Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_opamp.o
  .debug_line    0x00000000      0x295 Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_opamp.o
- .debug_str     0x00000000      0x34e Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_opamp.o
+ .debug_str     0x00000000      0x34f Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_opamp.o
  .comment       0x00000000       0x7f Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_opamp.o
  .debug_frame   0x00000000      0x170 Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_opamp.o
  .ARM.attributes
@@ -740,7 +740,7 @@ Discarded input sections
                 0x00000000       0x88 Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_pwr.o
  .debug_ranges  0x00000000       0x78 Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_pwr.o
  .debug_line    0x00000000      0x305 Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_pwr.o
- .debug_str     0x00000000      0x41b Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_pwr.o
+ .debug_str     0x00000000      0x41c Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_pwr.o
  .comment       0x00000000       0x7f Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_pwr.o
  .debug_frame   0x00000000      0x22c Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_pwr.o
  .ARM.attributes
@@ -931,7 +931,7 @@ Discarded input sections
                 0x00000000      0x1d0 Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_rtc.o
  .debug_ranges  0x00000000      0x1c0 Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_rtc.o
  .debug_line    0x00000000      0x803 Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_rtc.o
- .debug_str     0x00000000      0xb9c Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_rtc.o
+ .debug_str     0x00000000      0xb9d Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_rtc.o
  .comment       0x00000000       0x7f Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_rtc.o
  .debug_frame   0x00000000      0x860 Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_rtc.o
  .ARM.attributes
@@ -1005,7 +1005,7 @@ Discarded input sections
                 0x00000000      0x108 Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_sdio.o
  .debug_ranges  0x00000000       0xf8 Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_sdio.o
  .debug_line    0x00000000      0x43d Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_sdio.o
- .debug_str     0x00000000      0x690 Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_sdio.o
+ .debug_str     0x00000000      0x691 Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_sdio.o
  .comment       0x00000000       0x7f Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_sdio.o
  .debug_frame   0x00000000      0x48c Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_sdio.o
  .ARM.attributes
@@ -1063,7 +1063,7 @@ Discarded input sections
                 0x00000000       0xd0 Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_spi.o
  .debug_ranges  0x00000000       0xc0 Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_spi.o
  .debug_line    0x00000000      0x427 Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_spi.o
- .debug_str     0x00000000      0x64c Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_spi.o
+ .debug_str     0x00000000      0x64d Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_spi.o
  .comment       0x00000000       0x7f Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_spi.o
  .debug_frame   0x00000000      0x3a0 Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_spi.o
  .ARM.attributes
@@ -1103,7 +1103,7 @@ Discarded input sections
                 0x00000000       0x80 Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_syscfg.o
  .debug_ranges  0x00000000       0x70 Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_syscfg.o
  .debug_line    0x00000000      0x32f Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_syscfg.o
- .debug_str     0x00000000      0x469 Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_syscfg.o
+ .debug_str     0x00000000      0x46a Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_syscfg.o
  .comment       0x00000000       0x7f Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_syscfg.o
  .debug_frame   0x00000000      0x1fc Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_syscfg.o
  .ARM.attributes
@@ -1284,7 +1284,7 @@ Discarded input sections
                 0x00000000      0x2b8 Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_tim.o
  .debug_ranges  0x00000000      0x2a8 Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_tim.o
  .debug_line    0x00000000      0x989 Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_tim.o
- .debug_str     0x00000000      0xc95 Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_tim.o
+ .debug_str     0x00000000      0xc96 Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_tim.o
  .comment       0x00000000       0x7f Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_tim.o
  .debug_frame   0x00000000      0xd14 Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_tim.o
  .ARM.attributes
@@ -1363,7 +1363,7 @@ Discarded input sections
                 0x00000000       0x58 Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_wwdg.o
  .debug_ranges  0x00000000       0x48 Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_wwdg.o
  .debug_line    0x00000000      0x240 Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_wwdg.o
- .debug_str     0x00000000      0x2c7 Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_wwdg.o
+ .debug_str     0x00000000      0x2c8 Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_wwdg.o
  .comment       0x00000000       0x7f Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_wwdg.o
  .debug_frame   0x00000000      0x134 Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_wwdg.o
  .ARM.attributes
@@ -1878,18 +1878,18 @@ LOAD c:/program files (x86)/atollic/truestudio for arm 6.0.0/armtools/bin/../lib
                 0x00000296       0x1d c:/program files (x86)/atollic/truestudio for arm 6.0.0/armtools/bin/../lib/gcc/arm-atollic-eabi/5.3.1/armv7-m/crtn.o
 OUTPUT(vrs_cv5.elf elf32-littlearm)
 
-.debug_info     0x00000000     0x4a2c
+.debug_info     0x00000000     0x4a2d
  .debug_info    0x00000000      0x55a Libraries\STM32L1xx_StdPeriph_Driver\src\misc.o
  .debug_info    0x0000055a      0xcb5 Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_adc.o
  .debug_info    0x0000120f      0x65f Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_gpio.o
  .debug_info    0x0000186e      0xa29 Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_rcc.o
  .debug_info    0x00002297      0x9ce Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_usart.o
  .debug_info    0x00002c65      0x1ea src\main.o
- .debug_info    0x00002e4f       0x84 src\startup_stm32l1xx_hd.o
- .debug_info    0x00002ed3      0x133 src\stm32l1xx_it.o
- .debug_info    0x00003006      0x568 src\system_stm32l1xx.o
- .debug_info    0x0000356e      0xbcb src\tiny_printf.o
- .debug_info    0x00004139      0x8f3 src\vrs_cv5.o
+ .debug_info    0x00002e4f       0x85 src\startup_stm32l1xx_hd.o
+ .debug_info    0x00002ed4      0x133 src\stm32l1xx_it.o
+ .debug_info    0x00003007      0x568 src\system_stm32l1xx.o
+ .debug_info    0x0000356f      0xbcb src\tiny_printf.o
+ .debug_info    0x0000413a      0x8f3 src\vrs_cv5.o
 
 .debug_abbrev   0x00000000      0xe87
  .debug_abbrev  0x00000000      0x149 Libraries\STM32L1xx_StdPeriph_Driver\src\misc.o
@@ -1954,27 +1954,27 @@ OUTPUT(vrs_cv5.elf elf32-littlearm)
  .debug_line    0x00001b00      0x2b9 src\tiny_printf.o
  .debug_line    0x00001db9      0x2bf src\vrs_cv5.o
 
-.debug_str      0x00000000     0x2082
- .debug_str     0x00000000      0x3ca Libraries\STM32L1xx_StdPeriph_Driver\src\misc.o
-                                0x41e (size before relaxing)
- .debug_str     0x000003ca      0x641 Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_adc.o
-                                0x845 (size before relaxing)
- .debug_str     0x00000a0b      0x325 Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_gpio.o
-                                0x51b (size before relaxing)
- .debug_str     0x00000d30      0x51e Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_rcc.o
-                                0x75f (size before relaxing)
- .debug_str     0x0000124e      0x42d Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_usart.o
-                                0x6df (size before relaxing)
- .debug_str     0x0000167b       0x58 src\main.o
-                                0x226 (size before relaxing)
- .debug_str     0x000016d3       0xa6 src\stm32l1xx_it.o
-                                0x22b (size before relaxing)
- .debug_str     0x00001779       0xae src\system_stm32l1xx.o
-                                0x38a (size before relaxing)
- .debug_str     0x00001827      0x441 src\tiny_printf.o
-                                0x5f6 (size before relaxing)
- .debug_str     0x00001c68      0x41a src\vrs_cv5.o
-                                0x9d8 (size before relaxing)
+.debug_str      0x00000000     0x2083
+ .debug_str     0x00000000      0x3cb Libraries\STM32L1xx_StdPeriph_Driver\src\misc.o
+                                0x41f (size before relaxing)
+ .debug_str     0x000003cb      0x641 Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_adc.o
+                                0x846 (size before relaxing)
+ .debug_str     0x00000a0c      0x325 Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_gpio.o
+                                0x51c (size before relaxing)
+ .debug_str     0x00000d31      0x51e Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_rcc.o
+                                0x760 (size before relaxing)
+ .debug_str     0x0000124f      0x42d Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_usart.o
+                                0x6e0 (size before relaxing)
+ .debug_str     0x0000167c       0x58 src\main.o
+                                0x227 (size before relaxing)
+ .debug_str     0x000016d4       0xa6 src\stm32l1xx_it.o
+                                0x22c (size before relaxing)
+ .debug_str     0x0000177a       0xae src\system_stm32l1xx.o
+                                0x38b (size before relaxing)
+ .debug_str     0x00001828      0x441 src\tiny_printf.o
+                                0x5f7 (size before relaxing)
+ .debug_str     0x00001c69      0x41a src\vrs_cv5.o
+                                0x9d9 (size before relaxing)
 
 .comment        0x00000000       0x7e
  .comment       0x00000000       0x7e Libraries\STM32L1xx_StdPeriph_Driver\src\misc.o
