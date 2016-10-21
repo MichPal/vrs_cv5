@@ -6,8 +6,8 @@
  */
 #include "vrs_cv5.h"
 
-uint16_t ADCvalue=0;
-uint8_t pom=0;
+uint16_t ADCvalue = 0;
+uint8_t pom = 0;
 
 void adc_init(void)
 {
@@ -51,8 +51,9 @@ void adc_init(void)
 
 	/* Wait until the ADC1 is ready */
 	while(ADC_GetFlagStatus(ADC1, ADC_FLAG_ADONS) == RESET);
+
+	/* Start conversion */
 	ADC_SoftwareStartConv(ADC1);
-	//while(!ADC_GetFlagStatus(ADC1, ADC_FLAG_EOC)) asm ("nop");
 
 }
 
@@ -71,7 +72,7 @@ void gpio_init(void)
 	GPIO_InitStructure.GPIO_PuPd = GPIO_PuPd_NOPULL ;
 	GPIO_Init(GPIOA, &GPIO_InitStructure);
 
-	// Configure USART pin
+	/* Configure USART pins */
 	GPIO_InitStructure.GPIO_Pin = GPIO_Pin_2 | GPIO_Pin_3;
 	GPIO_InitStructure.GPIO_Mode = GPIO_Mode_AF;
 	GPIO_InitStructure.GPIO_PuPd = GPIO_PuPd_NOPULL;
@@ -85,6 +86,7 @@ void gpio_init(void)
 
 void usart_init()
 {
+	/* USART setup */
 	USART_InitTypeDef USART_InitStructure;
 
 //	USART_StructInit(&USART_InitStructure);
@@ -96,16 +98,19 @@ void usart_init()
 	USART_InitStructure.USART_Mode = USART_Mode_Rx | USART_Mode_Tx;
 	USART_Init(USART2, &USART_InitStructure);
 
-	USART_ITConfig(USART2,USART_IT_RXNE,ENABLE);	//USART na prerusenie
+	/* Enable USART interrupt */
+	USART_ITConfig(USART2,USART_IT_RXNE,ENABLE);
 
+	/* NVIC for USART2 */
 	NVIC_InitTypeDef NVIC_InitStructure;
-	NVIC_InitStructure.NVIC_IRQChannel = USART2_IRQn; //zoznam prerušení nájdete v
+	NVIC_InitStructure.NVIC_IRQChannel = USART2_IRQn;
 	NVIC_InitStructure.NVIC_IRQChannelPreemptionPriority = 1;
 	NVIC_InitStructure.NVIC_IRQChannelSubPriority = 0;
 	NVIC_InitStructure.NVIC_IRQChannelCmd = ENABLE;
 	NVIC_Init(&NVIC_InitStructure);
 
-	USART_Cmd(USART2,ENABLE);	// povolenie USART
+	/* Enable USART */
+	USART_Cmd(USART2,ENABLE);
 
 }
 
@@ -115,12 +120,12 @@ void SendChar(char ch)
 	while(!USART_GetFlagStatus(USART2,USART_FLAG_TC));
 }
 
-void SendString(char* stringa)
+void SendString(char* poleChar)
 {
 	uint8_t i=0;
-	while(stringa[i]!=0)
+	while(poleChar[i]!=0)
 	{
-		SendChar(stringa[i]);
+		SendChar(poleChar[i]);
 		i++;
 	}
 }
@@ -129,20 +134,18 @@ void ADC1_IRQHandler(void)
 {
 	if(ADC_GetFlagStatus(ADC1,ADC_FLAG_EOC))
 	{
-		ADCvalue=ADC_GetConversionValue(ADC1);
+		ADCvalue = ADC_GetConversionValue(ADC1);
 	}
-	//if(ADC_GetFlagStatus(ADC1,ADC_SR_OVR))	ADC_ClearFlag(ADC1,ADC_FLAG_OVR);
 }
 
 void USART2_IRQHandler()
 {
 	if(USART_GetFlagStatus(USART2,USART_FLAG_RXNE))
 	{
-		//USART_ClearITPendingBit(USART2,USART_IT_RXNE);
 
-		if (USART_ReceiveData(USART2)=='m')
+		if (USART_ReceiveData(USART2) == 'm')
 		{
-			if (pom==0) pom = 1;
+			if (!pom) pom = 1;
 			else pom = 0;
 		}
 

@@ -7,6 +7,7 @@
 extern uint16_t ADCvalue;
 extern uint8_t pom;
 char poleChar[10];
+int celeCislo, desatinneCislo;
 
 int main(void)
 {
@@ -15,20 +16,25 @@ int main(void)
 	usart_init();
 	while (1)
 	{
-		{
-			if (pom==0)
-			{
-				sprintf(poleChar,"%d\r\n",ADCvalue);
-				SendString(poleChar);
-			}else
-			{
-				sprintf(poleChar,"%d.%dV\r\n",(int)(ADCvalue*330/4096)/100,(int)(ADCvalue*330/4096)%100);
-				//330 pretoze delime 100 a dostaneme cele cislo a modulo 100 dostaneme dve desatinnne miesta
-				SendString(poleChar);
-			}
 
-			for (uint32_t i=1;i<500000;i++);
+		if (!pom)
+		{
+			/* Format 4095 */
+			sprintf(poleChar, "%d\r\n", ADCvalue);
+			SendString(poleChar);
+		}else
+		{
+			/* Format 3.30V */
+			celeCislo = (int)(ADCvalue*3.3/4095);
+			desatinneCislo = (int)(ADCvalue*330/4095)%100;
+
+			sprintf(poleChar, "%d.%dV\r\n", celeCislo, desatinneCislo);
+			SendString(poleChar);
 		}
+
+		/* Delay */
+		for (uint32_t i = 1; i < 500000; i++);
+
 	}
   return 0;
 }
