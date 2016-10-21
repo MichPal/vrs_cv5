@@ -16,14 +16,15 @@ int main(void)
 	while (1)
 	{
 		{
-//test
 			if (pom==0)
 			{
 				sprintf(poleChar,"%d\r\n",ADCvalue);
 				SendString(poleChar);
 			}else
 			{
-
+				sprintf(poleChar,"%d.%dV\r\n",(int)(ADCvalue*330/4096)/100,(int)(ADCvalue*330/4096)%100);
+				//330 pretoze delime 100 a dostaneme cele cislo a modulo 100 dostaneme dve desatinnne miesta
+				SendString(poleChar);
 			}
 
 			for (uint32_t i=1;i<500000;i++);
