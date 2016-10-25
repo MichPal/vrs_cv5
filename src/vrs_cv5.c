@@ -119,12 +119,6 @@ void usart_init()
 }
 
 
-void SendString()
-{
-	Posielaj=1;
-	USART_ITConfig(USART2,USART_IT_TXE,ENABLE);
-}
-
 void ADC1_IRQHandler(void)
 {
 	if(ADC_GetFlagStatus(ADC1,ADC_FLAG_EOC))
@@ -146,7 +140,7 @@ void USART2_IRQHandler()
 
 	}
 
-	if(USART_GetFlagStatus(USART2,USART_FLAG_TXE) && Posielaj==1)
+	if(USART_GetFlagStatus(USART2,USART_FLAG_TXE))
 	{
 		if(poleChar[i]!=0)
 		{
@@ -155,7 +149,6 @@ void USART2_IRQHandler()
 		else
 		{
 			i=0;
-			Posielaj=0;
 			USART_ITConfig(USART2,USART_IT_TXE,DISABLE);
 		}
 	}
