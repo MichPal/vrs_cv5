@@ -8,6 +8,9 @@
 
 uint16_t ADCvalue = 0;
 uint8_t pom = 0;
+extern char poleChar[10];
+uint8_t Posielaj=0;
+uint8_t i=0;
 
 void adc_init(void)
 {
@@ -101,6 +104,7 @@ void usart_init()
 	/* Enable USART interrupt */
 	USART_ITConfig(USART2,USART_IT_RXNE,ENABLE);
 
+
 	/* NVIC for USART2 */
 	NVIC_InitTypeDef NVIC_InitStructure;
 	NVIC_InitStructure.NVIC_IRQChannel = USART2_IRQn;
@@ -114,20 +118,11 @@ void usart_init()
 
 }
 
-void SendChar(char ch)
-{
-	USART_SendData(USART2,(char) ch);
-	while(!USART_GetFlagStatus(USART2,USART_FLAG_TC));
-}
 
-void SendString(char* poleChar)
+void SendString()
 {
-	uint8_t i=0;
-	while(poleChar[i]!=0)
-	{
-		SendChar(poleChar[i]);
-		i++;
-	}
+	Posielaj=1;
+	USART_ITConfig(USART2,USART_IT_TXE,ENABLE);
 }
 
 void ADC1_IRQHandler(void)
@@ -151,4 +146,17 @@ void USART2_IRQHandler()
 
 	}
 
+	if(USART_GetFlagStatus(USART2,USART_FLAG_TXE) && Posielaj==1)
+	{
+		if(poleChar[i]!=0)
+		{
+			USART_SendData(USART2,poleChar[i++]);
+		}
+		else
+		{
+			i=0;
+			Posielaj=0;
+			USART_ITConfig(USART2,USART_IT_TXE,DISABLE);
+		}
+	}
 }

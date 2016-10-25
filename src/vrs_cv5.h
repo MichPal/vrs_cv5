@@ -15,8 +15,7 @@ void adc_init(void);
 void gpio_init(void);
 void usart_init(void);
 
-void SendChar(char ch);
-void SendString(char* poleChar);
+void SendString();
 
 
 void ADC1_IRQHandler(void);

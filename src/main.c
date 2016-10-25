@@ -21,15 +21,14 @@ int main(void)
 		{
 			/* Format 4095 */
 			sprintf(poleChar, "%d\r\n", ADCvalue);
-			SendString(poleChar);
+			SendString();
 		}else
 		{
 			/* Format 3.30V */
 			celeCislo = (int)(ADCvalue*3.3/4095);
 			desatinneCislo = (int)(ADCvalue*330/4095)%100;
-
 			sprintf(poleChar, "%d.%dV\r\n", celeCislo, desatinneCislo);
-			SendString(poleChar);
+			SendString();
 		}
 
 		/* Delay */
